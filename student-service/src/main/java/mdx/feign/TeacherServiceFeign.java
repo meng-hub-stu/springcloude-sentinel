@@ -1,6 +1,6 @@
 package mdx.feign;
 
-import mdx.entity.Teacher;
+import mdx.entity.Student;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -25,6 +25,6 @@ public interface TeacherServiceFeign {
      * @return
      */
     @GetMapping("/getTeacher/{id}")
-    Teacher getInfo(@PathVariable("id") String id);
+    Student getInfo(@PathVariable("id") String id);
 
 }

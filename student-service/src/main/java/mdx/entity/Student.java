@@ -14,7 +14,7 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class Teacher {
+public class Student {
 
     private  String name;
     private  String sex;

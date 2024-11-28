@@ -1,10 +1,8 @@
 package mdx.controller;
 import lombok.AllArgsConstructor;
-import lombok.NoArgsConstructor;
-import mdx.entity.Teacher;
+import mdx.entity.Student;
 import mdx.feign.TeacherServiceFeign;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
@@ -25,8 +23,8 @@ public class StudentController {
      * @return
      */
     @GetMapping("/getTeacherInfo")
-    public Teacher getInfo(){
-        Teacher info = teacherServiceFeign.getInfo("111");
+    public Student getInfo(){
+        Student info = teacherServiceFeign.getInfo("111");
         return info;
     }
 

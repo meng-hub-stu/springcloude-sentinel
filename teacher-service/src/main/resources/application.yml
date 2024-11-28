@@ -1,5 +1,5 @@
 server:
-  port: 8001
+  port: 9528
 spring:
   application:
     name: teacherservice
@@ -8,4 +8,4 @@ spring:
       server-addr: localhost:8848
     sentinel:
       transport:
-        dashboard: localhost:8080
+        dashboard: localhost:9529

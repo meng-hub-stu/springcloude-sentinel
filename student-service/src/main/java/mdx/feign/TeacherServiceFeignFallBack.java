@@ -1,6 +1,6 @@
 package mdx.feign;
 
-import mdx.entity.Teacher;
+import mdx.entity.Student;
 import org.springframework.stereotype.Component;
 
 /**
@@ -19,7 +19,7 @@ public class TeacherServiceFeignFallBack implements TeacherServiceFeign{
      * @return
      */
     @Override
-    public Teacher getInfo(String id) {
+    public Student getInfo(String id) {
         return null;
     }
 
